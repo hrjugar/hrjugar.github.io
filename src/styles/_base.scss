@@ -1,0 +1,61 @@
+@use 'abstracts/index' as *;
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-optical-sizing: auto;
+  src: url('./fonts/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: italic;
+  font-optical-sizing: auto;
+  src: url('./fonts/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+:root {
+  font-family: Rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $clr-vanilla-white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $clr-vanilla-black;
+}
+
+#root {
+  @include flex(column, 0, flex-start, center);
+}
+
+main, nav {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: $clr-vanilla-white;
+}
