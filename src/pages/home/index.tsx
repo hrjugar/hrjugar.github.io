@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useRef } from "react"
 import { motion } from "framer-motion"
 import Marquee from "./Marquee"
 import SkillsList from "./SkillsList";
